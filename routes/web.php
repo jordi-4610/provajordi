@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'ColorController@getIndex');
+
+Route::post('/color', 'ColorController@color');
